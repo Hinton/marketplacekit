@@ -11,8 +11,17 @@ services:
     restart: unless-stopped
     tty: true
     environment:
-      SERVICE_NAME: app
-      SERVICE_TAGS: dev
+      - SERVICE_NAME=app
+      - SERVICE_TAGS=dev
+      - DB_CONNECTION
+      - DB_HOST
+      - DB_PORT
+      - DB_DATABASE
+      - DB_USERNAME
+      - DB_PASSWORD
+      - APP_DEBUG=true
+      - APP_ENV=DEV
+      - APP_KEY=base64:x2SHH01+2R+vwv09YcrvXqdFJ+bbqgT9gW4njcYLjDE=
     working_dir: /var/www
     volumes:
       - ./:/var/www
@@ -50,6 +59,17 @@ services:
       SERVICE_NAME: mysql
     volumes:
       - dbdata:/var/lib/mysql/
+    networks:
+      - app-network
+
+  redis:
+    container_name: redis
+    image: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - ../data/redis:/data
+    restart: always
     networks:
       - app-network
 
