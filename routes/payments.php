@@ -2,11 +2,11 @@
 
 Route::group(['as' => 'payments.', 'prefix' => 'payments', 'middleware' => ['web', 'auth'], 'namespace' => '\Payments'], function()
 {
-/*
+
     Route::get('offline/connect/{key}', 'OfflineController@connect')->name('offline.connect');
     Route::get('offline/{checkout_session}', 'OfflineController@index')->name('offline.index');
     Route::post('offline/{checkout_session}', 'OfflineController@store')->name('offline.store');
-
+/*
     Route::get('paypal-split/connect', 'PaypalSplitController@connect')->name('paypal-split.connect');
     Route::any('paypal-split/connected', 'PaypalSplitController@connected')->name('paypal-split.connected');
     Route::any('paypal-split/cancel', 'PaypalSplitController@cancel')->name('paypal-split.cancel');

@@ -83,7 +83,6 @@ class OfflineController extends BaseController
             'user_id' => $user->id
         ]);
 		
-		
         $user->can_accept_payments = true;
         $user->save();
 

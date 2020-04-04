@@ -42,11 +42,11 @@
     {% endfor %}
 
     <!-- App Scripts & Styles -->
-    <script src="{{ asset('themes/' ~ current_theme() ~ '/js/app.js') }}"></script>
+    <script src="{{ '/themes/' ~ current_theme() ~ '/js/app.js' }}"></script>
     {% if setting('theme_css') %}
         <link href="{{ setting('theme_css') }}" rel="stylesheet">
     {% else %}
-        <link href="{{ asset('themes/' ~  current_theme()  ~ '/css/app.css') }}" rel="stylesheet">
+        <link href="{{ '/themes/' ~  current_theme()  ~ '/css/app.css' }}" rel="stylesheet">
     {% endif %}
 
         <!--<link href="https://rawcdn.githack.com/jeremykenedy/laravel-auth/96c90ecbc0e50dc130e0e7248fee4eab28c68939/public/css/app.css" rel="stylesheet">

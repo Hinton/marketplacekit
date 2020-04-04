@@ -21,7 +21,7 @@ class SettingsTableSeeder extends Seeder
             array (
                 'id' => 3,
                 'key' => 'site_name',
-                'value' => 'MarketplaceKit',
+                'value' => 'PitchIn',
             ),
             
             array (
@@ -33,7 +33,7 @@ class SettingsTableSeeder extends Seeder
             array (
                 'id' => 6,
                 'key' => 'currency',
-                'value' => 'GBP',
+                'value' => 'SEK',
             ),
             
             array (
@@ -129,7 +129,7 @@ class SettingsTableSeeder extends Seeder
             array (
                 'id' => 29,
                 'key' => 'distance_unit',
-                'value' => 'miles',
+                'value' => 'km',
             ),
             
             array (
@@ -165,13 +165,13 @@ class SettingsTableSeeder extends Seeder
             array (
                 'id' => 38,
                 'key' => 'marketplace_transaction_fee',
-                'value' => '3',
+                'value' => '0',
             ),
             
             array (
                 'id' => 39,
                 'key' => 'marketplace_percentage_fee',
-                'value' => '20',
+                'value' => '0',
             ),
             
             array (
