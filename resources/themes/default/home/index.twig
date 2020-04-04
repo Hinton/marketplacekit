@@ -2,9 +2,53 @@
 
 {% block content %}
 
+    <div class="pt-5 bg-light">
+        <div class="container-fluid">
+            {% include 'home/widgets/latest_listings' with {
+                'widget': { 'title': 'Latest listings', 'alignment': 'left' },
+                'config': { 'limit': 5 }
+            } %}
+        </div>
+    </div>
+    <div class="pt-5 bg-white">
+        <div class="container-fluid">
+            {% include 'home/widgets/category_listing' with {
+                'widget': { 'title': 'Categories', 'alignment': 'center' }
+            } %}
+        </div>
+    </div>
 
-    <div class="container-fluid pt-5 pb-5">
-        ENTER your own HTML HERE
+    <div class="pt-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mt-3">
+                <div class="col-12 mb-3">
+                    <h4 class=" pb-3 text-center">Why you should join us</h4>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-sm-4 col-12 mb-3 text-center">
+                <div class="col-10 offset-1 text-center">
+                    <span class="text-success tw-text-5xl iconsmind icon-Shop-2"></span>
+                    <h5 class="truncate mt-3">For Sellers &amp; Renters</h5>
+                    <p>If you have anything to sell, equipment or even space to rent - list it with us for free and get some extra exposure</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 mb-3 text-center">
+                    <div class="col-10 offset-1 text-center">
+                        <span class="text-success tw-text-5xl iconsmind icon-Cart-Quantity"></span>
+                        <h5 class="truncate mt-3">For Buyers</h5>
+                        <p>Explore a range of products from smartphones to rental properties and dog walking services</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12 mb-3 text-center">
+                    <div class="col-10 offset-1 text-center">
+                        <span class="text-success tw-text-5xl iconsmind icon-Worker"></span>
+                        <h5 class="truncate mt-3">For Professionals &amp; Workers</h5>
+                        <p>Fitness instructor, dog walker? Advertise your services to our community and earn a little extra</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 {% endblock %}

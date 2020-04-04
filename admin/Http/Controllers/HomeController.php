@@ -18,7 +18,6 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        dd(5);
         $data = [];
         $data['selected_lang'] = $request->get('locale', app('laravellocalization')->getDefaultLocale());
         $data['widgets'] = Widget::where('locale', $data['selected_lang'])->orderBy('position', 'ASC')->get();
