@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Models\PaymentGateway;
+use App\Models\PaymentProvider;
 use App\Events\EmailVerified;
 use App\Models\User;
 use App\Http\Controllers\Controller;
@@ -131,6 +133,16 @@ class RegisterController extends Controller
                 $user->save();
             }
         }
+
+        $provider = PaymentProvider::where('key', 'default')->where('is_offline', 1)->first();
+        $payment_gateway = PaymentGateway::firstOrCreate([
+            'name' => $provider->key,
+            'gateway_id' => $identifier,
+            'user_id' => $user->id
+        ]);
+		
+        $user->can_accept_payments = true;
+        $user->save();
 
         return $this->registered($request, $user)
             ?: redirect(route("email-verification.index"));
