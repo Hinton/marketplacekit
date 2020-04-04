@@ -2,6 +2,23 @@
 
 {% block content %}
 
+    <div class="hero" style="background-image: url(/images/perry-grone-lbLgFFlADrY-unsplash.jpg);">
+        <div class="container-fluid">
+            <div class="vh-75 hero-shift">
+                <div class="hero-content">
+                    {% include 'home/widgets/hero' with {
+                        'widget': {
+                            'title': 'Help, Volunteer & Coordinate',
+                            'alignment': 'center',
+                            'metadata': 'Start your search below.'
+                        },
+                        'config': { 'limit': 5 }
+                    } %}
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="pt-5 bg-light">
         <div class="container-fluid">
             {% include 'home/widgets/latest_listings' with {
