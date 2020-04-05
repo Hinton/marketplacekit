@@ -11,7 +11,7 @@
                       <a href="{{item.url}}" style="max-height: 40px; display: block; font-style: normal;" class="h6 card-subtitle mb-2 text-dark" >{{ item.title }}</a>
                       <p class="card-text row mt-0">
                           {# <span class="col-sm-12 text-danger truncate mb-1 {% if item.bold %}font-weight-bold{%  endif %}">{{ item.price_formatted }}</span> #}
-
+                          <span class="col-sm-12 text-danger truncate mb-1">{{ item.pricing_model.name }}</span>
                           <small class="col-sm-12 text-muted truncate">{{ item.short_address }} {% if request('sort') == 'distance' %}({{ item.human_distance }}){% endif %}</small>
                           <small class="col-sm-12 text-muted truncate">{{ item.user.display_name }}</small>
                           <!--<small class="col-sm-6 text-muted text-right"><?= item.created_at->diffForHumans() ?></small>-->
