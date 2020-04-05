@@ -85,6 +85,17 @@ class CategoriesTableSeeder extends Seeder
                 'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
                 'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
             ),
+            6 =>
+            array (
+                'id' => 7,
+                'parent_id' => 1,
+                'order' => 1,
+                'name' => 'Medical shopping',
+                'slug' => '',
+                'hash' => NULL,
+                'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
+                'updated_at' => Carbon::now()->format('Y-m-d H:i:s'),
+            ),
         ));
         
         
