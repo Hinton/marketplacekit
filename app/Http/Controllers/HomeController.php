@@ -58,9 +58,8 @@ class HomeController extends Controller
         MetaTag::set('description', Setting::get('home_description'));
         MetaTag::set('keywords', Setting::get('site_keywords'));
         
-        $filters = Filter::orderBy('position', 'ASC')->where('is_hidden', 0)->where('is_default', 0)->get();
         $categories = Category::nested()->get();
-        $listings = Listing::active()->orderBy('created_at', 'DESC')->limit(5)->get();
+        $listings = Listing::active()->orderBy('created_at', 'DESC')->limit(8)->get();
 
         $data['categories'] = $categories;
         $data['items'] = $listings;
