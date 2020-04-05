@@ -9,7 +9,7 @@
             <div class="row">
                 {% for category in categories %}
                     <div class="col-sm-3 col-6 mb-5">
-                        <a href="{{ route(setting('marketplace_index'), {'category' : category}) }}"><h6 class="text-muted">{{ _l(category.name) }}</h6></a>
+                        <a href="{{ route(setting('marketplace_index'), {'category' : category.id}) }}"><h6 class="text-muted">{{ _l(category.name) }}</h6></a>
                         {% for child_category in category.child %}
                             <a href="{{ route(setting('marketplace_index'), {'category' : child_category.id}) }}">{{ _l(child_category.name) }}</a>
                             <br/>
