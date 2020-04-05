@@ -243,13 +243,13 @@ class SettingsTableSeeder extends Seeder
             array (
                 'id' => 64,
                 'key' => 'custom_homepage',
-                'value' => '0',
+                'value' => '1',
             ),
             
             array (
                 'id' => 65,
                 'key' => 'show_search_sidebar',
-                'value' => '0',
+                'value' => '1',
             ),
             
             array (
