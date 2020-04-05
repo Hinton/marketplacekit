@@ -76,6 +76,41 @@
                 </tbody>
             </table>
 
+            <h4>{{ __('Address') }}</h4>
+            <table class="table  table-sm">
+                <tbody>
+                    <tr>
+                        <td class="border-0">{{ __('Full name') }}</td>
+                        <td class="border-0">{{ order.listing_options.billing_address.full_name }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="border-0">{{ __('Address') }}</td>
+                        <td class="border-0">{{ order.listing_options.billing_address.address }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="border-0">{{ __('City') }}</td>
+                        <td class="border-0">{{ order.listing_options.billing_address.city }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="border-0">{{ __('State') }}</td>
+                        <td class="border-0">{{ order.listing_options.billing_address.state }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="border-0">{{ __('Postal code/Zip') }}</td>
+                        <td class="border-0">{{ order.listing_options.billing_address.zip }}</td>
+                    </tr>
+
+                    <tr>
+                        <td class="border-0">{{ __('Country') }}</td>
+                        <td class="border-0">{{ order.listing_options.billing_address.country }}</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
     </div>
     {% if order.status == 'open' %}

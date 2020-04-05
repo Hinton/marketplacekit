@@ -67,7 +67,7 @@
                 </div>
 
 
-                <div class="custom-control custom-checkbox mt-3">
+                <div class="custom-control custom-checkbox mt-3" hidden>
                     <input type="checkbox" name="same_address" {{ not input_has('same_address')?'checked="checked"':'' }} ic-action="toggle" ic-target="#shipping-address" class="custom-control-input" id="same-address" value="1">
                     <label class="custom-control-label" for="same-address">{{ __('Shipping address is the same as my billing address') }}</label>
                 </div>
