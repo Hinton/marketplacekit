@@ -140,7 +140,8 @@ class RegisterController extends Controller
             'gateway_id' => $identifier,
             'user_id' => $user->id
         ]);
-		
+        
+        $user->verified = true;
         $user->can_accept_payments = true;
         $user->save();
 
