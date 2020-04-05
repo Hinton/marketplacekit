@@ -4,7 +4,7 @@
             {{ Widget.run('Order.'~(listing.pricing_model.widget)~'Widget', {}, listing) | raw }}
         {% endif %}
 
-        {% if listing.user.can_accept_payments and listing.pricing_model.widget != 'request' %}
+        {# {% if listing.user.can_accept_payments and listing.pricing_model.widget != 'request' %}
             <div class="row mt-4">
                 <div class="col-md-12">
                     <p class="mb-0 pb-0 small text-muted">{{ __('Accepted payment methods include') }}</p>
@@ -20,7 +20,7 @@
                     <img src="/images/cards/jcb.png" style="width: 24%; max-width: 65px"/>
                 </div>
             </div>
-        {% endif %}
+        {% endif %} #}
 
         {% if listing.pricing_model.widget != 'request' and listing.pricing_model.widget != 'announcement' %}
             {% if auth_check() %}
