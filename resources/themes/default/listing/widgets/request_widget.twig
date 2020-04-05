@@ -27,7 +27,10 @@
 
                     <p class="small mb-3 text-muted"><i class="mdi mdi-clock"></i> {{ __("Posted") }} {{ listing.days_ago}}</p>
                     {%  if total %}
-                    <h3 class="mb-3 h2">{{ format_money(total, listing.currency) }} <i class="widget-indicator fa fa-circle-o-notch p-1 fa-spin float-right" style="display:none"></i></h3>
+                    <h3 class="mb-3 h2">
+                        {# {{ format_money(total, listing.currency) }}  #}
+                        <i class="widget-indicator fa fa-circle-o-notch p-1 fa-spin float-right" style="display:none"></i>
+                    </h3>
                     <p class=" h6 text-muted">{{ listing.price_per_unit_display }}</p>
                     {% endif %}
 

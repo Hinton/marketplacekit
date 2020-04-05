@@ -51,7 +51,8 @@
 
                                     <input class="form-check-input" id="additional_option_{{ additional_option.id }}" {{ (input_has('additional_option.'~additional_option.id))?'checked=checked':'' }} name="additional_option[{{ additional_option.id }}]" type="checkbox" value="1">
                                     <label class="form-check-label" for="additional_option_{{ additional_option.id }}">
-                                        {{ additional_option.name }} <span class="text-muted">({{ format_money(additional_option.price, listing.currency) }})</span>
+                                        {{ additional_option.name }} 
+                                        <span class="text-muted">({{ format_money(additional_option.price, listing.currency) }})</span>
                                     </label>
 									
 									{% if additional_option.max_quantity > 1 and input_has('additional_option.' ~ additional_option.id) %}
