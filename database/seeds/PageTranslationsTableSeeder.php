@@ -60,7 +60,11 @@ class PageTranslationsTableSeeder extends Seeder
                 'locale' => 'en',
                 'title' => 'About us',
                 'slug' => 'about',
-                'content' => '<p>Enter your about us text here</p>',
+                'content' => '<p>PitchIn is a free marketplace where you can volunteer, donate or request donations. The current primary purposes is to assist during the COVID-19 pandemic but our hope is that this platform may be of use in the future.</p>
+<p>On PItchIn volunteers can offer to assist in areas they are interested in existing projects, or work and organise their own project.</p>
+<p>Makers can offer to provide 3D printed materials such as visors, valves and more.</p>
+<p>And organisations can post requests for volunteers or contact makers.</p>
+<p>This project was developed during the 2020 <a href="https://www.hackthecrisis.se/" target="_blank" rel="noopener">Hack the crisis</a>&nbsp;hackathon by <a href="https://oscarhinton.com" target="_blank" rel="noopener">Oscar Hinton</a> and <a href="https://andreascoroiu.com">Andreas Coroiu</a>.</p>',
                 'seo_title' => NULL,
                 'seo_meta_description' => NULL,
                 'seo_meta_keywords' => NULL,
