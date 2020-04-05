@@ -851,16 +851,16 @@
         },
         {
             "name": "cornford/googlmapper",
-            "version": "v2.32.0",
+            "version": "v2.35.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bradcornford/Googlmapper.git",
-                "reference": "16873c05c4d5f5ef7d0e493428fb75b517e9633f"
+                "reference": "3d180bfed327e5d218fc09ca3da5d561e6fbf30a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bradcornford/Googlmapper/zipball/16873c05c4d5f5ef7d0e493428fb75b517e9633f",
-                "reference": "16873c05c4d5f5ef7d0e493428fb75b517e9633f",
+                "url": "https://api.github.com/repos/bradcornford/Googlmapper/zipball/3d180bfed327e5d218fc09ca3da5d561e6fbf30a",
+                "reference": "3d180bfed327e5d218fc09ca3da5d561e6fbf30a",
                 "shasum": ""
             },
             "require": {

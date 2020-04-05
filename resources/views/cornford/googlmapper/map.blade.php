@@ -5,10 +5,6 @@
 	var maps = [];
 
 	function initialize_{!! $id !!}() {
-	    if($("#map-canvas-{!! $id !!}").length == 0) {
-	        return false;
-        }
-	    //alert("{!! $id !!}");
 		var bounds = new google.maps.LatLngBounds();
 		var infowindow = new google.maps.InfoWindow();
 		var position = new google.maps.LatLng({!! $options['latitude'] !!}, {!! $options['longitude'] !!});
@@ -109,8 +105,7 @@
 
     @if (!$options['async'])
 
-	    //google.maps.event.addDomListener(window, 'load', initialize_{!! $id !!});
-	    google.maps.event.addDomListener(window, 'turbolinks:load', initialize_{!! $id !!});
+	    google.maps.event.addDomListener(window, 'load', initialize_{!! $id !!});
 
     @endif
 
