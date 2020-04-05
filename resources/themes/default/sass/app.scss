@@ -505,3 +505,9 @@ font-size: 10px;
 
 .icon-people-carry:before { content: '\e800'; } /* '' */
 .icon-toolbox:before { content: '\e801'; } /* '' */
+
+#listing-description {
+  p {
+    margin-bottom: 0;
+  }
+}
