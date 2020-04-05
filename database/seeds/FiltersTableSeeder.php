@@ -28,7 +28,7 @@ class FiltersTableSeeder extends Seeder
 					'form_input_meta' => NULL,
 					'is_category_specific' => 0,
 					'is_searchable' => 1,
-					'is_hidden' => 0,
+					'is_hidden' => 1,
 					'is_default' => 1,
 					'categories' => NULL,
                     'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
