@@ -36,7 +36,7 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item {{ active(['account.listings.index'], 'list-group-item-primary') }}"><a href="{{ route('account.listings.index') }}">{{ __('Listings') }}</a></li>
                         <li class="list-group-item {{ active(['account.orders.index', 'account.orders.show'], 'list-group-item-primary') }}"><a href="{{ route('account.orders.index') }}">{{ __('Orders') }}</a></li>
-                        <li class="list-group-item {{ active(['account.bank-account.index'], 'list-group-item-primary') }}"><a href="{{ route('account.bank-account.index') }}">{{ __('Payments') }}</a></li>
+                        {# <li class="list-group-item {{ active(['account.bank-account.index'], 'list-group-item-primary') }}"><a href="{{ route('account.bank-account.index') }}">{{ __('Payments') }}</a></li> #}
 
 						{% if module_enabled('userverification') %}
                         <li class="list-group-item {{ active(['account.userverification.index'], 'list-group-item-primary') }}"><a href="{{ route('account.userverification.index') }}">{{ __('Identity Verification') }}</a></li>
